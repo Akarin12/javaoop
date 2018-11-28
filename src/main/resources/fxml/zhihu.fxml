@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import com.soft1841.oop.zhihu.ZhihuButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import com.soft1841.oop.zhihu.ZhihuLa1?>
+<?import com.soft1841.oop.zhihu.ZhihuLa2?>
+<?import com.soft1841.oop.zhihu.ZhihuBtn2?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.oop.zhihu.ZhihuController">
+
+    <ImageView AnchorPane.leftAnchor="100" AnchorPane.topAnchor="100">
+        <Image url="/img/zhihu/zhihulogo.png"/>
+    </ImageView>
+
+
+    <ZhihuLa2 text="测试" AnchorPane.topAnchor="150" AnchorPane.leftAnchor="20"/>
+    <ZhihuButton text="测试" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20"/>
+    <ZhihuLa1 text="知乎" AnchorPane.topAnchor="50" AnchorPane.leftAnchor="20"/>
+    <ZhihuBtn2 text="测试" AnchorPane.topAnchor="200" AnchorPane.leftAnchor="20"/>
+</AnchorPane>

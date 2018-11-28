@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import com.soft1841.oop.uplay.UBtn?>
+<?import com.soft1841.oop.uplay.UBtnS?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import com.soft1841.oop.uplay.ULabelN?>
+<?import com.soft1841.oop.uplay.ULabelLv?>
+<?import com.soft1841.oop.uplay.UBtnL?>
+<?import com.soft1841.oop.uplay.UTextField?>
+<?import com.soft1841.oop.uplay.ULine?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.oop.uplay.UplayController">
+    <top>
+        <VBox>
+            <AnchorPane fx:id="topap">
+                <HBox spacing="13">
+                    <UBtn fx:id="menu1"/>
+                    <UBtn text="最新消息"/>
+                    <UBtnS text="游戏"/>
+                    <UBtn text="商店"/>
+                    <UBtn text="黑色星期五大促"/>
+                    <padding>
+                        <Insets top="10" left="25"/>
+                    </padding>
+                </HBox>
+                <HBox spacing="11">
+                    <padding>
+                        <Insets top="10" left="1468"/>
+                    </padding>
+                    <UBtn fx:id="cart"/>
+                    <UBtn fx:id="key"/>
+                    <UBtn fx:id="message"/>
+                    <UBtn fx:id="friends"/>
+                    <AnchorPane>
+                        <ImageView AnchorPane.topAnchor="-5" AnchorPane.leftAnchor="18">
+                            <Image url="/img/uplay/me.png"/>
+                        </ImageView>
+                        <ULabelN text="Akarin9" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="70"/>
+                        <ULabelLv text="等级 22" AnchorPane.topAnchor="23" AnchorPane.leftAnchor="70"/>
+                        <ImageView AnchorPane.topAnchor="23" AnchorPane.leftAnchor="135">
+                            <Image url="/img/uplay/point.png"/>
+                        </ImageView>
+                        <ULabelLv text="112" AnchorPane.topAnchor="23" AnchorPane.leftAnchor="155"/>
+                    </AnchorPane>
+                </HBox>
+            </AnchorPane>
+            <AnchorPane>
+                <HBox AnchorPane.leftAnchor="25" AnchorPane.topAnchor="10">
+                    <UBtnL fx:id="menu2"/>
+                    <UBtnL fx:id="menu3"/>
+                    <UBtnL fx:id="menu4"/>
+                </HBox>
+                <UTextField text="      搜索     " AnchorPane.leftAnchor="200" AnchorPane.topAnchor="18"/>
+                <ImageView AnchorPane.leftAnchor="205" AnchorPane.topAnchor="21">
+                    <Image url="/img/uplay/search.png"/>
+                </ImageView>
+            </AnchorPane>
+        </VBox>
+    </top>
+    <center>
+        <BorderPane>
+            <top>
+                <AnchorPane>
+                    <VBox spacing="5">
+                        <padding>
+                            <Insets top="30" left="25"/>
+                        </padding>
+                        <UBtnL fx:id="installed" text="已安装"/>
+                        <UBtnL fx:id="mygame" text="我的游戏"/>
+                        <UBtnL fx:id="free" text="免费游戏"/>
+                    </VBox>
+                    <ULine AnchorPane.leftAnchor="48" AnchorPane.topAnchor="150"/>
+                </AnchorPane>
+            </top>
+            <center>
+                    <FlowPane fx:id="show" vgap="50" hgap="25">
+                        <padding>
+                            <Insets top="20" left="50"/>
+                        </padding>
+                    </FlowPane>
+            </center>
+        </BorderPane>
+    </center>
+</BorderPane>
