@@ -14,7 +14,7 @@ public class BookApp extends Application {
         URL location = getClass().getResource("/fxml/book_main.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(location);
         BorderPane root = fxmlLoader.load();
-        Scene scene = new Scene(root,1250,800);
+        Scene scene = new Scene(root,1250,700);
         primaryStage.setTitle("图书主界面");
         primaryStage.setScene(scene);
         primaryStage.show();
