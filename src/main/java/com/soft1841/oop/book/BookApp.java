@@ -16,7 +16,6 @@ public class BookApp extends Application {
         BorderPane root = fxmlLoader.load();
         Scene scene = new Scene(root,1250,800);
         primaryStage.setTitle("图书主界面");
-
         primaryStage.setScene(scene);
         primaryStage.show();
     }
